@@ -1,0 +1,316 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #4a44aa;
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+  }
+  
+  .slider {
+    display: flex;
+    animation: slide 20s linear infinite; /* Adjust duration as needed */
+  }
+  
+  .slider img {
+    width: 400px; /* Set width to 400px */
+    height: 400px; /* Set height to 400px */
+    object-fit: cover; /* Maintain aspect ratio while covering the entire space */
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  
+  .cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .navigation {
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+
+  .celebration {
+    background-color: #f1581b;
+    text-align: center;
+    padding: auto;
+    height: max-content;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .container p {
+    font-size: 24px;
+    color: #333;
+    margin: 0%;
+  }
+
+  .welcome-section {
+    background-color: #ffffff;
+    padding: 2px 2px;
+    height: max-content;
+  }
+  
+  .welcome-section .container {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1000px; /* Set a maximum width if needed */
+  }
+  
+  .welcome-section h2 {
+    font-size: 32px;
+    color: #5026a4;
+    text-align: center;
+  }
+  
+  .welcome-section .description {
+    font-size: 18px;
+    color: #000000;
+    text-align: justify;
+    width: 100%; /* Set the width to 100% to match the screen width */
+    margin-top: 20px;
+  }
+
+  .know-more-btn {
+    background-color: #0e4177;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add some top margin for spacing */
+  }
+  
+  .know-more-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .image-section {
+    background-image: url('img/clgpeep.jpeg'); /* Replace 'path_to_your_image.jpg' with the path to your background image */
+    background-size: cover;
+    background-position: center;
+    color: #f0e9e9; /* Text color on the overlay */
+    
+  }
+  
+  .image-overlay {
+    background-color: rgba(255, 255, 255, 0.5); /* Background color with opacity for overlay effect */
+  }
+  
+  .image-section .container {
+    text-align: center;
+  }
+  
+  .image-section h2 {
+    font-size: 32px;
+  }
+  
+  .overlay-text {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #000000;
+    text-align: justify;
+    width: 100%; /* Set the width to 100% to match the screen width */
+  }
+
+  .courses-section {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .course-boxes {
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between boxes */
+    flex-wrap: wrap; /* Allow boxes to wrap to the next row */
+  }
+  
+  .course-box {
+    width: calc(25% - 20px); /* Adjust width as needed */
+    margin-bottom: 20px; /* Add some space between rows */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-box img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .course-box p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+  }
+
+  .founder-section {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .founder-box {
+    display: flex;
+    justify-content: center; /* Center the founder box horizontally */
+  }
+  
+  .founder-content {
+    display: flex;
+    flex-direction: column; /* Arrange content in a column */
+    align-items: center; /* Center content horizontally */
+  }
+  
+  .founder-img img {
+    width: 200px; /* Adjust image width as needed */
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 20px; /* Add space between image and info */
+  }
+  
+  .founder-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .founder-info p {
+    font-size: 16px;
+    color: #555;
+    text-align: center;
+  }
+  
+
+  
+  .cta h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .cta p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+  }
+  
+  .feature {
+    text-align: center;
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 16px;
+  }
+  
+  footer {
+    background-color: #20158b;
+    padding: 50px 0;
+    text-align: center;
+    color: white; /* Set text color to white */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    flex-basis: calc(25% - 20px); /* Adjust width of each column */
+    padding: 0 10px;
+    margin-bottom: 30px; /* Add some space between columns */
+  }
+  
+  .footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .map-image {
+    width: 200px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  
